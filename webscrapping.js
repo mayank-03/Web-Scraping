@@ -21,6 +21,8 @@ response.then(function (response) {
        var document= dom.window.document;
        let matchinfo=document.querySelectorAll(div.matchinfo)
        console.log(matchinfo.length);
+       console.log(html);
+
 } )
 .catch(function (error) {
   console.log(error);
