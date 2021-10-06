@@ -17,15 +17,9 @@ console.log(args);
 let response=axios.get(args.source);
 response.then(function (response) {
        let html=response.data;
-       let dom=new jsdom.JSDOM(html);
-       var document= dom.window.document;
-       let matchinfo=document.querySelectorAll(div.matchinfo)
-       console.log(matchinfo.length);
        console.log(html);
-
 } )
 .catch(function (error) {
   console.log(error);
 })
-
 
